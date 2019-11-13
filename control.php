@@ -26,6 +26,14 @@ switch ($action){
 		$url = "https://api.myfox.io/v3/site/".$site_id."/device/".$device_id."?access_token=".$access_token;
 		$data_json = '{"settings":{"global":{"sound_enabled":true,"auto_protect_enabled":true,"light_enabled":true}},"label":"'.$label_siren.'"}';
 		break;
+	case "weekend":
+		$url = "https://api.myfox.io/v3/site/".$site_id."/security?access_token=".$access_token;
+		$url_sirene = "https://api.myfox.io/v3/site/".$site_id."/device/".$device_id."?access_token=".$access_token;
+		$data_json = '{"settings":{"global":{"sound_enabled":false,"auto_protect_enabled":true,"light_enabled":true}},"label":"'.$label_siren.'"}';
+		$data_json2 = '{"status":"partial"}';
+		$data_json3 = '';
+		$action = "partial";
+		break;
 }
 if($action != "partial"){
 	$ch = curl_init();
