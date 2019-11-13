@@ -1,7 +1,6 @@
 <?php
 include_once('parametres.php');
 $action = $_GET["action"];
-$delais_activation = 35; #delais d'activation de votre alarme +5 secs 
 
 switch ($action){
 	case "armed":
