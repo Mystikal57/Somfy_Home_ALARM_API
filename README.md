@@ -31,4 +31,6 @@ To get a new access token, the refresh token is needed. The refresh_token will b
 https://accounts.somfy.com/oauth/oauth/v2/token?client_id=YOUR_CONSUMER_KEY&client_secret=YOUR_CONSUMER_SECRET&grant_type=refresh_token&refresh_token=REFRESH_TOKEN
 
 4) Se servir des infos ici pour obtenir les différents ID de site & device: https://developer.somfy.com/somfy-open-api/apis
-5) Modifier les pages PHP en utilisans vos infos (token, site_id, device_id, nom de votre sirene)
+5) Modifier la page parametres.php avec vos données
+6) appeler la page control.php avec l'argument action= armed, disarmed, partial, notif_off ou notif_on
+ex: control.php?action=armed
