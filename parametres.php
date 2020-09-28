@@ -23,8 +23,6 @@ $site_id = $_SESSION["site_id"];
 if ($_SESSION["device_id"] == ""){
 $infos_devices = "https://api.myfox.io/v3/site/".$site_id."/device?access_token=".$access_token;
 $details_devices = json_decode(file_get_contents($infos_devices));
-//$_SESSION["device_id"] = $details_devices->items[2]->device_id;
-//$_SESSION["device_id"] =  $details_devices->items[]->device_definition->device_definition_id;
         foreach($details_devices->items as $item)
         {
                 if ($item->device_definition->device_definition_id  == "mss_siren"){
