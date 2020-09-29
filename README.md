@@ -18,7 +18,8 @@ Description des commandes:
 Changelog:
 28-09-2020:
 - Modification page parametres afin qu'il trouve automatiquement l'ID de la sirene
-10-11-2019:
+
+10-11-2020:
 - ajout de la génération automatique du token à l'aide du nom d'utilisateur et mot de passe du fichier config.ini
 - si le token est juste expiré -> raffraichissement du token
 - ajout mode weekend
