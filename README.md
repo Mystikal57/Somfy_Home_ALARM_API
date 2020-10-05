@@ -6,6 +6,8 @@ Utilisation des api myfox pour somfy home alarm
 2) appeler la page control.php avec l'argument action= armed, disarmed, partial, weekend, notif_off ou notif_on
 ex: control.php?action=armed
 
+Pour connaite l'état de l'alarme il faut appeler la page state.php
+
 Description des commandes:
 - armed : activer l'alarme
 - disarmed : desactiver l'alarme
