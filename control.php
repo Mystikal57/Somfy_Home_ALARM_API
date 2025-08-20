@@ -39,6 +39,10 @@ switch ($action){
                 $data_json3 = '';
                 $action = "partial";
                 break;
+        case "panic":
+                $url = "https://api.myfox.io/v3/site/".$site_id."/panic?access_token=".$access_token;
+                $data_json = '{"mode":"panic"}';
+                break;
 }
 if($action != "partial"){
         $ch = curl_init();
